@@ -1,4 +1,6 @@
 function makePercentageString(floatingPointNumber:number) {
-    return `${floatingPointNumber}%`;
+    const roundedFloatingPointNumber = floatingPointNumber.toFixed(1);
+    const trimmedRoundedFloatingPointNumber = roundedFloatingPointNumber.replace(".0", "");
+    return `${trimmedRoundedFloatingPointNumber}%`;
 }
 export { makePercentageString }

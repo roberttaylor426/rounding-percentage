@@ -10,4 +10,19 @@ describe("our rounding percentage function", () => {
         const result = makePercentageString(1);
         expect(result).toBe("1%");
     });
+
+    it("will return 1.5% when passed a 1.5", () => {
+        const result = makePercentageString(1.5);
+        expect(result).toBe("1.5%");
+    });
+
+    it("will return 1.5% when passed a 1.51", () => {
+        const result = makePercentageString(1.51);
+        expect(result).toBe("1.5%");
+    });
+
+    it("will return 1.5% when passed a 1.49", () => {
+        const result = makePercentageString(1.49);
+        expect(result).toBe("1.5%");
+    })
 });
