@@ -1,3 +1,4 @@
-const thing = true;
-
-export { thing }
+function makePercentageString(floatingPointNumber:number) {
+    return `${floatingPointNumber}%`;
+}
+export { makePercentageString }
